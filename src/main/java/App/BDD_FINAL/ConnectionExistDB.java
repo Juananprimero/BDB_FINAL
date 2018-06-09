@@ -54,7 +54,7 @@ public class ConnectionExistDB {
 					myquery = "for $x in doc(\"/db/bdb_opti_xml.xml\")//table_data[@name = \"translation\"]/row where ($x/field/@name = \"stable_id\" and contains($x,\""+search+"\"))return ($x/field[@name=\"stable_id\"],$x/field[@name=\"transcript_id\"])";
 				}
 
-				col = DatabaseManager.getCollection(URI + XmldbURI.ROOT_COLLECTION,"admin","alfaomega");
+				col = DatabaseManager.getCollection(URI + XmldbURI.ROOT_COLLECTION,"admin","*****");
 				XPathQueryService xpqs = (XPathQueryService)col.getService("XPathQueryService", "1.0");
 				xpqs.setProperty("indent", "yes");
 
