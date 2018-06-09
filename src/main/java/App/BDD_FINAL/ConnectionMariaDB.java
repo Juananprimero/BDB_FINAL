@@ -41,7 +41,7 @@ public class ConnectionMariaDB extends ConnectionAbstract {
 			}
 			conn =
 					DriverManager.getConnection("jdbc:mariadb://localhost:3307/"+ bd +"?" +
-							"user=root&password=alfaomega&useSSL=false&serverTimezone=UTC");
+							"user=root&password=******&useSSL=false&serverTimezone=UTC");
 		}catch(SQLException ex) {
 			// handle any errors
 			System.out.println("SQLException: " + ex.getMessage());
