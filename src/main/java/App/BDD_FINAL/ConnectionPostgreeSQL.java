@@ -19,7 +19,7 @@ public class ConnectionPostgreeSQL extends ConnectionAbstract {
 	//parameters of the connection
 	private String url = "";
 	private String user = "postgres";
-	private String password = "alfaomega";
+	private String password = "********";
 
 	public ConnectionPostgreeSQL(String opt){
 		super(opt);
