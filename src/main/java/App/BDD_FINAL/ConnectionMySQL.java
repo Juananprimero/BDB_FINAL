@@ -41,7 +41,7 @@ public class ConnectionMySQL extends ConnectionAbstract{
             }
         	conn =
                DriverManager.getConnection("jdbc:mysql://localhost:3306/"+ bd +"?" +
-                                           "user=root&password=alfaomega");
+                                           "user=root&password=********");
 		}catch(SQLException ex) {
 	            // handle any errors
 	            System.out.println("SQLException: " + ex.getMessage());
